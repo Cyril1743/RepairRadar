@@ -1,6 +1,6 @@
 const bids = require("express").Router();
 const { Ticket, Bids, User, Mechanic } = require("../../models/index.js");
-const isAuth = require("../../util/isAuth");
+const isAuth = require("../../util/isAuth.js");
 
 bids.post("/:id", isAuth, async (req, res) => {
     try {

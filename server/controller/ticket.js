@@ -1,6 +1,6 @@
 const ticket = require("express").Router();
 const { Ticket, Bids, Mechanic, Room, User } = require("../models/index.js");
-const isAuth = require("../util/isAuth");
+const isAuth = require("../util/isAuth.js");
 const { winnerBid } = require("../util/mailer.js");
 const opencage = require('opencage-api-client');
 

@@ -1,41 +1,25 @@
 {
-  "name": "this-is-going-to-be-great",
+  "name": "repairradarcopy",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "- First and Foremost SHOUTOUT to the collaborators [DavidLove](https://github.com/Cyril1743) [AmeliaBigler](https://github.com/AmeliaBigler) and [JonGuhl](https://github.com/JonathanGuhl) for making this happen!",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "debug": "node --inspect server.js",
-    "seed": "node seeds/seeds.js"
+    "develop": "concurrently \" cd server && npm run start\" \"cd client && npm start",
+    "install": "cd server && npm install && cd ../client && npm install",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AmeliaBigler/this-is-going-to-be-great.git"
+    "url": "git+https://github.com/Cyril1743/RepairRadar.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AmeliaBigler/this-is-going-to-be-great/issues"
+    "url": "https://github.com/Cyril1743/RepairRadar/issues"
   },
-  "homepage": "https://github.com/AmeliaBigler/this-is-going-to-be-great#readme",
-  "dependencies": {
-    "bcrypt": "^5.1.0",
-    "connect-session-sequelize": "^7.1.5",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "express-handlebars": "^7.0.2",
-    "express-session": "^1.17.3",
-    "geolib": "^3.3.3",
-    "mailgen": "^2.0.27",
-    "moment": "^2.29.4",
-    "mysql2": "^3.2.0",
-    "natural": "^6.2.0",
-    "nodemailer": "^6.9.1",
-    "nodemon": "^2.0.22",
-    "opencage-api-client": "^1.0.1",
-    "sequelize": "^6.29.3",
-    "socket.io": "^4.6.1"
+  "homepage": "https://github.com/Cyril1743/RepairRadar#readme",
+  "devDependencies": {
+    "concurrently": "^8.0.1"
   }
 }

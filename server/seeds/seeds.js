@@ -1,5 +1,5 @@
 const sequelize = require('../config/connection');
-const { User, Mechanic, Ticket, Bids, Room } = require('../models/index.js');
+const { User, Mechanic, Ticket, Bids, Room } = require('../../models/index.js');
 
 const userData = require('./userData.json');
 const mechanicData = require('./mechanicData.json');
