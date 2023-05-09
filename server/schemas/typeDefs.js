@@ -39,6 +39,8 @@ type Mechanic {
     username: String!
     email: String!
     password: String!
+    lat: Int!
+    lon: Int!
 }
 type Bid {
     id: Int
@@ -60,6 +62,7 @@ type Query {
     user(id: Int!): User
     tickets: [Ticket]
     ticket(id: Int!): Ticket
+    ticketsNearby(lat: Int!, lon: Int, radius: Int!)
     userTickets(userId: Int!): Ticket
     mechanicRooms(mechanicId: Int!): [Room]
     userRooms(userId: Int!): [Room]
